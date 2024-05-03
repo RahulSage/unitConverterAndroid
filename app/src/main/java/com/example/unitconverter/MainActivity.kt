@@ -152,7 +152,7 @@ fun UnitConverter(){
             }
         }
         Spacer(modifier = Modifier.height(16.dp))
-        Text(text = "Result - $outputValue")
+        Text(text = "Result - $outputValue $outputUnit", style=MaterialTheme.typography.labelLarge)
     }
 }
 
@@ -162,11 +162,3 @@ fun UnitConverterPreview(){
     UnitConverter();
 }
 
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
